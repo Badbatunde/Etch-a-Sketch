@@ -1,7 +1,8 @@
 let container = document.getElementById("container");
-let button = document.querySelector('button')
+let button = document.getElementById('btn')
 
 button.addEventListener('click', makeGrid)
+button.addEventListener('click', disableBtn)
 
 function makeGrid (number) {
     let gridNumber = parseInt(prompt('Enter number of Grids', ''))
@@ -23,5 +24,9 @@ function makeGrid (number) {
         cell.addEventListener('mouseover', cell)
         container.appendChild(cell);
     }       
+}
+
+function disableBtn () {
+    document.getElementById('btn').disabled = true;
 }
 
