@@ -1,0 +1,30 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: green;
+  height: 100vh;
+  width: 100vh;
+}
+
+#container {
+  display: grid;
+  height: 70%;
+  width: 70%;
+  /* justify-content: center; */
+  border: 2px solid black;
+  border-radius: 10px;
+  background-color: white;
+  margin: 40px auto;
+}
+
+.grid-box {
+  border: 1px solid gray;
+}
+
+#container > .grid-box::after {
+  background-color: aquamarine;
+}
