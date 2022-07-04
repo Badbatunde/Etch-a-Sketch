@@ -23,9 +23,9 @@ function makeGrid (number) {
     for (c = 0; c < (gridNumber*gridNumber); c++) {
         let cell = document.createElement('div');
         cell.classList.add("grid-box");
-        cell.addEventListener ('mousedown', changeColor  /* function onClick(event) {
-            event.target.style.backgroundColor = 'salmon'
-        } */); 
+        cell.addEventListener ('mousedown', function(event) {
+        event.target.style.backgroundColor = 'white'});
+        cell.addEventListener('mouseover', changeColor); 
         container.appendChild(cell);
     }       
 }
@@ -35,13 +35,12 @@ function disableBtn () {
 }
 
 function changeColor (e) {
-    if(e.type = 'mousedown') {
+    if(e.type = 'mouseover') {
         const randomR = Math.floor(Math.random()*256);
         const randomG = Math.floor(Math.random()*256)
         const randomB = Math.floor(Math.random()*256)
-        e.target.style.backgroundColor = `rgb(${randomR}, ${randomG}, ${randomR})`
+        e.target.style.backgroundColor = `rgb(${randomR}, ${randomG}, ${randomB})`
     }
-    backgroundColor = 'black';
 }
 
 function eraseGrid () {
