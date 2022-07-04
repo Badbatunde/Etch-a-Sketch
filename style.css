@@ -21,6 +21,11 @@ h1 {
   color: aquamarine;
 }
 
+.controls p {
+  font-style: italic;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
 footer {
   margin-top: 0px;
 }
@@ -43,11 +48,16 @@ span {
   border: 2px solid rgba(256, 256, 256, 0.4);
   margin: 40px auto;
   box-shadow: 4px 4px brown;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
+  margin-top: 40px;
 }
 
 .grid-box {
   border: none;
+}
+
+button {
+  padding: 5px 10px;
 }
 
 button a {
@@ -61,11 +71,4 @@ button a {
   justify-content: center;
   align-items: center;
   margin-top: 20px;
-}
-
-#colorPrompt {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-end;
 }

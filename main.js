@@ -24,7 +24,7 @@ function makeGrid (number) {
         let cell = document.createElement('div');
         cell.classList.add("grid-box");
         cell.addEventListener ('mousedown', function(event) {
-        event.target.style.backgroundColor = 'white'});
+        event.target.style.backgroundColor = 'black'});
         cell.addEventListener('mouseover', changeColor); 
         container.appendChild(cell);
     }       
