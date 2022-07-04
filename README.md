@@ -1,3 +1,3 @@
 # Etch-a-Sketch
 
-#PC view only.
+PC view only.
