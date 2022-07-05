@@ -22,7 +22,7 @@ function makeGrid (number) {
         let cell = document.createElement('div');
         cell.classList.add("grid-box");
         cell.addEventListener ('mousedown', function(event) {
-        event.target.style.backgroundColor = 'black'});
+        event.target.style.backgroundColor = 'Black'});
         cell.addEventListener('mouseover', changeColor); 
         container.appendChild(cell);
     }       
