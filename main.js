@@ -1,10 +1,8 @@
 let container = document.getElementById("container");
 let button = document.getElementById('btn')
-let eraser = document.getElementById('eraser')
 
 button.addEventListener('click', makeGrid);
 button.addEventListener('click', disableBtn);
-eraser.addEventListener('click', eraseGrid)
 
 function makeGrid (number) {
     let gridNumber = parseInt(prompt('Enter number of Grids', ''))
